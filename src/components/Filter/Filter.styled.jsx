@@ -1,0 +1,25 @@
+import styled from '@emotion/styled';
+
+export const Label = styled.label`
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 20px;
+  font-size: 19px;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 1px 1px 10px rgb(77, 77, 77);
+`;
+
+export const Input = styled.input`
+  width: 350px;
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-size: 20px;
+  font-weight: 600;
+  outline: transparent;
+`;

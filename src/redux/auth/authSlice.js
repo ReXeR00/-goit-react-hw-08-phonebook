@@ -3,7 +3,7 @@ import {
   handleAuthPending,
   handleAuthRejected,
 } from './authHandlers';
-import { logIn, logOut, refreshUser, register } from './authOperations';
+import { logIn, logOut, refreshUser, register } from './authOprerations';
 const { createSlice, isAnyOf } = require('@reduxjs/toolkit');
 
 const initialState = {

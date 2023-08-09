@@ -6,6 +6,6 @@ export const Login = () => {
     <Helmet>
       <title>Login</title>
     </Helmet>
-    <LogInForm />npx create-react-app my-app --template @chakra-ui
+    <LogInForm />
   </div>;
 };
