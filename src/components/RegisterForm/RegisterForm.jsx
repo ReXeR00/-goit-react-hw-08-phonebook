@@ -20,13 +20,12 @@ export const RegisterForm = () => {
   return (
     <Form onSubmit={handleSubmit}>
       <Label>
-        Email
-        <Input type="email" name="email"></Input>
-      </Label>
-
-      <Label>
         UserName
         <Input type="text" name="name"></Input>
+      </Label>
+      <Label>
+        Email
+        <Input type="email" name="email"></Input>
       </Label>
       <Label>
         Password

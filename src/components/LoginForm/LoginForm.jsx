@@ -20,7 +20,7 @@ export const LogInForm = () => {
     <Form onSubmit={handleSubmit}>
       <Label>
         Email
-        <Input type="email" name="emial"></Input>
+        <Input type="email" name="email"></Input>
       </Label>
 
       <Label>
