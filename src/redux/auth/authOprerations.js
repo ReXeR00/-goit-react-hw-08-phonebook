@@ -54,18 +54,18 @@ export const refreshUser = createAsyncThunk(
   'auth/refresh',
   async (_, thunkAPI) => {
     const state = thunkAPI.getState();
-    const presistedToken = state.auth.token;
+    const persistedToken = state.auth.token;
 
-    if (presistedToken === null) {
+    if (persistedToken === null) {
       return thunkAPI.rejectWithValue('Unable to fetch user');
     }
 
     try {
-      setAuthHeader(presistedToken);
-      const response = await axios.get('users/me');
+      setAuthHeader(persistedToken);
+      const response = await axios.get('/users/current');
       return response.data;
     } catch (error) {
-      Notiflix.Notify.warning('Something went wrong. Please, try again.');
+      console.log(error);
       return thunkAPI.rejectWithValue(error.message);
     }
   }
