@@ -10,7 +10,7 @@ export const Layout = () => {
         marginLeft: 'auto',
         marginRight: 'auto',
         marginTop: '50px',
-        backgroundColor: '#b4d6f5',
+        backgroundColor: '#94F9B6',
         borderRadius: '8px',
         padding: '40px 20px',
         outline: 'auto #291578',
