@@ -6,7 +6,7 @@ import { RestrictedRoute } from 'components/RestrictedRoute';
 
 import { useAuth } from 'hooks';
 import { Layout } from 'components/Layout/Layout';
-import { refreshUser  } from '../../redux/auth/authOprerations';
+import { refreshUser } from '../../redux/auth/authOprerations';
 
 const HomePage = lazy(() => import('../../pages/Home/Home'));
 const RegisterPage = lazy(() => import('../../pages/Register/Register'));
@@ -18,14 +18,14 @@ export const App = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(refreshUser ());
+    dispatch(refreshUser());
   }, [dispatch]);
 
   return isRefreshing ? (
     <b>Refreshing user...</b>
   ) : (
     <Routes>
-      <Route path="/" element={Layout}>
+      <Route path="/" element={<Layout />}>
         <Route index element={<HomePage />} />
         <Route
           path="/register"
